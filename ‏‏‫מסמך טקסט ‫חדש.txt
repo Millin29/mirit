@@ -1,0 +1,4 @@
+<!DOCTYPE html><html lang="he"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>רשימת מילים עם אודיו</title></head><body>    <h1>רשימת מילים עם אודיו</h1>
+    <ul>        <li><button onclick="playAudio('audio1')">שלום</button></li>        <li><button onclick="playAudio('audio2')">איך</button></li>        <li><button onclick="playAudio('audio3')">מה</button></li>    </ul>
+    <!-- כאן אנחנו מגדירים את קובצי האודיו -->    <audio id="audio1" src="audio/שלום.mp3"></audio>    <audio id="audio2" src="audio/איך.mp3"></audio>    <audio id="audio3" src="audio/מה.mp3"></audio>
+    <script>        // פונקציה להפעלת האודיו בלחיצה על כפתור        function playAudio(id) {            var audio = document.getElementById(id);            audio.play();        }    </script></body></html>
